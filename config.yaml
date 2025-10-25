@@ -1,0 +1,19 @@
+data:
+  url: "https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data"
+  columns: ["sepal_length", "sepal_width", "petal_length", "petal_width", "class"]
+
+preprocessing:
+  test_size: 0.2
+  random_state: 42
+
+model:
+  type: "RandomForestClassifier"
+  params:
+    n_estimators: 100
+    random_state: 42
+
+evaluation:
+  metrics: ["accuracy", "f1_macro"]
+
+mlflow:
+  tracking_uri: "file:./mlruns"  # Local para simplicidad; podría ser remoto en Azure ML si se expande

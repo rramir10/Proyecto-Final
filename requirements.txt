@@ -1,0 +1,6 @@
+pandas
+scikit-learn
+mlflow
+pyyaml
+black  # Para lint
+pytest  # Para tests # Para leer config.yaml
